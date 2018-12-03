@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             case 1:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     openAlbum();
-                }else {
+                } else {
                     Toast.makeText(this, "you denied the permission", Toast.LENGTH_SHORT).show();
                 }
                 break;
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
-@TargetApi(19)
+    @TargetApi(19)
     private void handleImageBeforeKitKat(Intent data) {
         String imagePath = null;
         Uri uri = data.getData();
